@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:orientation="vertical" >
+	
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"        
+        android:keepScreenOn="true"
+        android:text="@string/home"
+        android:textColor="#ffffff"
+        android:textSize="200sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/text"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/passo1"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+	<TableRow
+         android:id="@+id/tableRow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center" >
+
+         <Spinner
+        android:id="@+id/opcoes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+     </TableRow>
+    
+
+     <!--<TableRow
+         android:id="@+id/tableRow2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center" >
+
+         <Button
+             android:id="@+id/btnFem_adulto"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:onClick="selecionaIdade"
+             android:text="@string/fem_adulto" />
+
+         <Button
+             android:id="@+id/btnFem_crianca"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:onClick="selecionaIdade"
+             android:text="@string/fem_crianca" />
+     </TableRow>-->
+     
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/text2"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+     
+     <TableRow
+         android:id="@+id/tableRow3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center" >
+
+         <Button
+             android:id="@+id/btnSeleciona"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/selecionar_foto" />
+
+     </TableRow>
+     <TableRow
+         android:id="@+id/tableRow4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center" >
+
+         <Button
+             android:id="@+id/btn_inicia"
+             android:layout_width="200dp"
+             android:layout_height="60dp"
+             android:gravity="center"
+             android:text="@string/iniciar" />
+
+     </TableRow>
+	 <TableRow
+         android:id="@+id/tableRow5"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp" >
+ 
+         <ImageButton
+         android:contentDescription="@string/imagem"
+         android:src="@drawable/ic_menu_back"
+         android:id="@+id/botaoVoltar"
+         android:layout_width="100dp"
+         android:layout_height="60dp"
+         android:layout_marginLeft="65dp"
+         android:onClick="botaoVoltar" />
+         
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="400dp"
+             android:layout_height="50dp"
+             android:layout_marginLeft="150dp"
+             android:layout_marginTop="10dp"
+             android:contentDescription="@string/imagem"
+             android:src="@drawable/logo_unb" />
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:contentDescription="@string/imagem"
+             android:src="@drawable/ic_launcher" />
+         <TextView
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:layout_marginLeft="10dp"   
+         	 android:layout_marginTop="15dp"
+        	 android:keepScreenOn="true"
+        	 android:text="@string/home"
+       	     android:textColor="#000"
+        	 android:textSize="30sp"
+        	 android:textStyle="bold" />
+     </TableRow>
+
+</LinearLayout>

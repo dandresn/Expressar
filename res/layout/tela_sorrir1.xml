@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/sorrir1"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/btnVoltar"      
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="67dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/ic_menu_back" />
+    <ImageButton
+    	android:id="@+id/btnAvancar"
+    	android:layout_width="100dp"
+    	android:layout_height="60dp"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignTop="@+id/btnInicio"
+    	android:layout_marginRight="65dp"
+    	android:contentDescription="@string/imagem"
+    	android:src="@drawable/ic_menu_forward" />
+    <Button
+    	android:id="@+id/btnZerar"
+    	android:layout_width="600dp"
+    	android:layout_height="60dp"
+    	android:layout_alignLeft="@+id/btnVoltar"
+    	android:layout_below="@+id/videoView1"
+    	android:text="@string/zerar" />
+
+<ImageButton
+    android:id="@+id/btnInicio"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:layout_alignTop="@+id/btnVoltar"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="@string/imagem"
+    android:src="@drawable/ic_menu_home" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="88dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/logo_unb" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="130dp"
+        android:layout_toLeftOf="@+id/btnAvancar"
+        android:keepScreenOn="true"
+        android:text="@string/home"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_alignLeft="@+id/btnVoltar"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="27dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/videoView1"
+        android:layout_toRightOf="@+id/imageView1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/bike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:contentDescription="@string/imagem"
+                android:paddingRight="100dp"
+                android:onClick="chamaImagem"
+                android:src="@drawable/bike" />
+
+            <ImageView
+                android:id="@+id/bola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:onClick="chamaImagem"
+                android:contentDescription="@string/imagem"
+                android:src="@drawable/bola" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/skate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:onClick="chamaImagem"
+                android:contentDescription="@string/imagem"
+                android:src="@drawable/skate" />
+
+            <ImageView
+                android:id="@+id/sorvete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="chamaImagem"
+                android:layout_marginTop="65dp"
+                android:contentDescription="@string/imagem"
+                android:src="@drawable/sorvete" />
+        </TableRow>
+    </TableLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:visibility="gone" 
+    android:id="@+id/view">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="600dp"
+        android:layout_height="400dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/bike" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:visibility="gone" 
+    android:id="@+id/view2">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="600dp"
+        android:layout_height="400dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/bola" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:visibility="gone" 
+    android:id="@+id/view3">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="600dp"
+        android:layout_height="400dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/skate" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:visibility="gone" 
+    android:id="@+id/view4">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="600dp"
+        android:layout_height="400dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/sorvete" />
+ 
+</RelativeLayout>
+
+</RelativeLayout>

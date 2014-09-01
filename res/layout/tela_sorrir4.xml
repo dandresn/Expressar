@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/sorrir3"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <ImageButton
+        android:id="@+id/btnAvancar"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/btnInicio"
+        android:layout_alignBottom="@+id/btnInicio"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="53dp"
+        android:contentDescription="@string/imagem"
+    	android:src="@drawable/ic_menu_forward"	/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="67dp"
+        android:contentDescription="@string/imagem"
+   		android:src="@drawable/ic_menu_back" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="88dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:contentDescription="@string/imagem"
+        android:src="@drawable/logo_unb" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="130dp"
+        android:layout_toLeftOf="@+id/btnAvancar"
+        android:keepScreenOn="true"
+        android:text="@string/home"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+ <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp">
+
+ <ImageView
+     android:id="@+id/imageWrong2"
+     android:layout_width="380dp"
+     android:layout_height="300dp"
+     android:contentDescription="@string/foto"
+     android:onClick="chamaVideo"
+     android:src="@drawable/felizounao3"
+     android:layout_margin="20dp" />
+
+ <ImageView
+     android:id="@+id/imageWrong"
+     android:layout_width="380dp"
+     android:layout_height="300dp"
+     android:contentDescription="@string/foto"
+     android:onClick="chamaVideo"
+     android:src="@drawable/felizounao2"
+     android:layout_margin="20dp"  />
+ <ImageView
+        android:id="@+id/imageRight"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/foto"
+        android:onClick="chamaVideo"
+        android:src="@drawable/felizounao1"
+        android:layout_margin="20dp"  />
+</TableRow>
+  <Button
+       android:id="@+id/btnMotivas"
+       android:layout_width="200dp"
+       android:layout_height="60dp"
+       android:layout_alignTop="@+id/btnInicio"
+       android:layout_toLeftOf="@+id/imageView2"
+       android:contentDescription="@string/imagem"
+       android:drawableRight="@drawable/ic_find_next_holo_light"
+       android:text="@string/video_motiva" />
+
+   <ImageButton
+       android:id="@+id/btnInicio"
+       android:layout_width="100dp"
+       android:layout_height="60dp"
+       android:layout_alignTop="@+id/btnVoltar"
+       android:layout_toLeftOf="@+id/btnMotivas"
+       android:contentDescription="@string/imagem"
+       android:src="@drawable/ic_menu_home" />
+   <VideoView
+       android:id="@+id/chama_video"
+       android:layout_width="400dp"
+       android:layout_height="60dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:visibility="gone" >
+    </VideoView>
+ 
+</RelativeLayout>

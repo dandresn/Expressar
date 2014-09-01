@@ -1,0 +1,47 @@
+<resources>
+	<string-array name="opcoes">
+	    <item>Homem - Jovem/Adulto</item>
+	    <item>Homem - Criança</item>
+	    <item>Mulher - Jovem/Adulto</item>
+	    <item>Mulher - Criança</item>
+	</string-array>
+	<string-array name="videos">
+	    <item>Parabéns</item>
+	    <item>Muito bem</item>
+	    <item>Muito bem rock</item>
+	    <item>Muito bem fogos</item>
+	    <item>Aplauso rock</item>
+	</string-array>
+    <string name="app_name">Expressar</string>
+    <string name="home">Expressar</string>
+    <string name="licoes">Selecione a lição desejada</string>
+    <string name="foto">Foto</string>
+    <string name="text">Configurações</string>
+    <string name="passo1">Primeiro passo - selecione o perfil desejado:</string>
+    <string name="text2">Segundo passo - selecione as imagens de preferência</string>
+    <string name="action_settings">Settings</string>
+    <string name="masc_adulto">Homem - Jovem/Adulto</string>
+    <string name="masc_crianca">Homem - Criança</string>
+    <string name="fem_adulto">Mulher - Jovem/Adulto</string>
+    <string name="fem_crianca">Mulher - Criança</string>
+	<string name="imagem">logo_unb</string>
+	<string name="selecionar_foto">Selecionar fotos</string>
+	<string name="selecionar">Selecione suas próprias imagens:</string>
+	<string name="sorrir1">O QUE FAZ VOCÊ SORRIR?</string>
+	<string name="sorrir3">QUEM ESTÁ SORRINDO?</string>
+	<string name="iniciar">Iniciar</string>
+	<string name="entrar">Entrar</string>
+	<string name="inicio">Início</string>
+	<string name="avancar">Avançar</string>
+	<string name="voltar">Voltar</string>
+	<string name="motiva">Vídeo motivacional</string>
+	<string name="zerar">Repetir lição</string>
+	<string name="ajuda">Ajuda</string>
+	<string name="creditos">Créditos</string>
+	<string name="video_motiva">Escolher vídeo</string>
+	<string name="titulo_creditos">Créditos</string>
+	<string name="texto_creditos">Orientador: professor Wilson Henrique Veneziano (Departamento de Ciência da Computação da Universidade de Brasília).</string>
+	<string name="texto_creditos2">Programadores: Diego André Souza Santos e Wellington Stanley</string>
+	<string name="texto_creditos3">Consultora pedagógica: pedagoga Maraísa Helena Borges Estevão Pereira (Secretaria de Educação do Governo do Distrito Federal).</string>
+	<string name="texto_creditos4">Produtora dos vídeos: UnBTV (direção, gravação e edição), sob a responsabilidade de Neuza Meller.</string>
+</resources>
